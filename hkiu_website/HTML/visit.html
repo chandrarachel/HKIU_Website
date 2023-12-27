@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CHANDRA Rachel">
+    <meta name="description" content="CS2204 CW3_Hong Kong Industrial University_Visit Page">
+    <meta name="keywords" content="CS2204, CW3, Hong Kong Industrial University, HTML, CSS, Javascript">
+    <title>Visit</title>
+
+    <link rel="stylesheet" href="../CSS/mainStyle.css">
+    <link rel="stylesheet" href="../CSS/navStyle.css">
+    <link rel="stylesheet" href="../CSS/visit.css">
+    
+    
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../image/logo.png" width="400" height="100" alt="Logo of Hong Kong Industrial University">
+            <h1>Hong Kong Industrial University</h1>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;We warmly welcome you to visit us at our Kowloon campus and experience our vibrant learning community. Our campus is located in the Hong Kong Kowloon High-Tech Park, where we collaborate closely with institutes of the Chinese Academy of Sciences.
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;During your visit, you can explore our world-class facilities, including the Protein Folding Science Center, Hong Kong Advanced Computing Equipment, Hong Kong Ultrafast Laser Facility, Hong Kong Electron-Positron Collider, and Hong Kong Supercomputer Facility. These facilities are available to our faculty, students, and researchers worldwide.
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;You will also have the chance to meet our renowned scholars and experts from home and abroad committed to providing students with cutting-edge knowledge and skills in their respective fields. Our faculty members are recognized leaders in their fields, and their research has been published in prestigious journals such as Cell, Nature, and Science.
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;We hope you will come and visit us soon to experience firsthand the dynamic and innovative community at Hong Kong Industrial University.
+        </p>
+    </div>
+
+    <div id="location">
+        <div id="col1">
+            <img src="../image/location.jpg" alt="HKIU Location Map">
+        </div>
+        <div id="col2">
+            <h3>Location</h3>
+            <p>Address: Tat Chee Avenue, Kowloon, Hong Kong SAR</p>
+            <p>Tel: <a href="tel:+85212345678">(852) 1234 5678</a></p>
+            <p>Fax: <a href="tel:+85287654321">(852) 8765 4321</a></p>
+            <p>Email: <a href="mailto:visit@hkiu.edu.hk">visit@hkiu.edu.hk</a></p>
+        </div>
+    </div>
+    
+    <br><br>
+
+    <div id="reservation">
+        <h3>Hong Kong Industrial University is having an open day on campus! Please make a reservation to visit our campus!</h3>
+        <form action="#" id="bookInformation" method="get">
+            <fieldset>
+                <legend>Booking information:</legend>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" value=""> <br>
+                <label for="time">Time:</label>
+                <select id="time" name="timeSelections">
+                    <option value="optionA">8:30-9:30am</option>
+                    <option value="optionB">9:30-10:30am</option>
+                    <option value="optionC">10:30-11:30am</option>
+                    <option value="optionD">11:30-12:30am</option>
+                    <option value="optionE">1:30-2:30pm</option>
+                    <option value="optionF">2:30-3:30pm</option>
+                    <option value="optionG">3:30-4:30pm</option>
+                    <option value="optionH">4:30-5:30pm</option>
+                </select> 
+                <br>
+                <label for="noofVisitors">No. of Visitors:</label>
+                <input type="number" step="0.01" id="noofVisitors" name="noofVisitors">
+                <br>
+                <div id="error_container"></div>
+                <br>
+                <div id="buttons">
+                    <input type="submit" value="Check Availability">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <img src="../image/footer_logo.png" width="300" height="100" alt="Footer Logo of Hong Kong Industrial University">
+        <p>&copy; CityU 2023 sources of images and text from Wikipedia Commons and Courtesy of Icon pack by Icons8 -- designed by <a href="design.html">CHANDRA Rachel</a></p>
+    </footer>
+    <script src="https://personal.cs.cityu.edu.hk/~cs2204/2023/cw3cs2204.js"></script>
+    <script src="../JS/visit.js"></script>
+</body>
+</html>
