@@ -1,0 +1,76 @@
+/* uniform styling across all pages (header, navigation bar, and footer) */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:not(dl, dt, dd) {
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F5CFD3;
+    height: 28vh;
+}
+
+header a {
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+@keyframes gradientText {
+    to {
+        background-position: var(--bg-size) 0;
+    }
+}
+
+header h1 {
+    --bg-size: 300%;
+    --color-one: #454543;
+    --color-two: #d8b6b9;
+    margin-top: 0.5rem;
+    background: linear-gradient(
+                    90deg, 
+                    var(--color-one),
+                    var(--color-two),
+                    var(--color-one)
+                    ) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientText 8s infinite linear;
+}
+
+
+
+
+
+footer {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F5CFD3;;
+    height: 25vh;
+    bottom: 0;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin-top: 1.2vh;
+}
+
+footer p a {
+    text-decoration: none;
+    color: rgba(226, 43, 89, 0.753);
+    font-weight: 600;
+    margin-top: 80%;
+}

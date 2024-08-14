@@ -1,0 +1,39 @@
+.contact {
+    margin: 100px 0;
+    height: 100%;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact table {
+    margin: 40px auto;
+}
+
+.contact table, th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 10px;
+    width: fit-content;
+}
+
+.contact th {
+    background-color: rgba(0, 0, 0, 0.765);
+    color: white;
+}
+
+.contact table {
+    position: relative;
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.contact table tbody > tr:nth-child(odd) {
+    background-color: rgb(245, 241, 241);
+}
+
+.contact table tbody > tr:nth-child(odd):hover {
+    background-color: pink;
+}

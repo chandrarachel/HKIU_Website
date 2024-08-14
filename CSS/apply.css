@@ -1,0 +1,206 @@
+.welcome {
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.644), rgba(128, 128, 128, 0.523), white);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.262);
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    height: 150px;
+}
+
+.welcome p {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#apply {
+    width: 90%;
+    margin: 50px auto;
+}
+
+@media screen {
+    form {
+        border: 0.01px black solid;
+        border-radius: 8px;
+    }
+
+    .tab {
+        margin-left: 20px;
+    }
+
+
+    #result table {
+        width: 100%;
+    }
+
+    #result table thead {
+        background-color: rgb(171, 160, 160);
+    }
+
+    #result table tbody > tr:nth-child(odd) {
+        background-color: rgb(245, 241, 241);
+    }
+
+    #result table tbody > tr:nth-child(odd):hover {
+        background-color: pink;
+    }
+
+    #result table tbody > tr:nth-child(even) {
+        background-color: rgba(215, 204, 204, 0.862);
+    }
+
+    #result table tbody > tr:nth-child(even):hover {
+        background-color: rgb(235, 213, 197);
+    }
+
+    #result table tfoot {
+        text-align: left;
+    }
+
+    #result .submit_clear {
+        margin: 10px auto;
+    }
+
+
+    #result .submit_clear a {
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10%;
+        padding: 4px;
+    }
+
+    #result .submit_clear a:hover {
+        background-color: blanchedalmond;
+    }
+
+    #all_menu {
+        width: 100%;
+        margin: 5px;
+    }
+
+    #all_menu h4 {
+        text-align: center;
+    }
+
+    #menu_CoE, #menu_CoS, #menu_CoI {
+        border-width: 1px;
+        border-radius: 8px 8px 0 0;
+        border-style: solid solid none solid;
+        border-color: black;
+        background-color: silver;
+    }
+
+    #CoE1,
+    #CoE2,
+    #CoE3,
+    #CoE4,
+    #CoE5,
+    #CoS1,
+    #CoS2,
+    #CoS3, 
+    #CoI1,
+    #CoI2,
+    #CoI3 {
+        display: inline-block;
+        width: 30%;
+    }
+
+    #menu_CoE, #menu_CoS, #menu_CoI {
+        float: left;
+        width: 32%;
+    }
+
+    #collegeofEngineering, #collegeofScience, #collegeofInterdisciplinaryStudies {
+        border-style: none solid solid solid;
+        border-color: black;
+        float: left;
+        width:calc(96% + 2.7px);
+        display: none;
+    }
+
+    .page1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+ 
+
+    /* #menu_CoE:hover, #menu_CoS:hover, #menu_CoI:hover {
+        background-color: white;
+    }
+
+    #menu_CoE:hover~#collegeofEngineering {
+        display: block;
+        background-color: white;
+    }
+
+    #menu_CoE:has(~#collegeofEngineering:hover){
+        display: block;
+        background-color: white;
+    }
+
+    #collegeofEngineering:hover {
+        display: block;
+        background-color: white;
+        
+    } */
+
+    
+
+
+    /* #menu_CoS:hover~#collegeofScience {
+        display: block;
+        background-color: white;
+    }
+
+    #menu_CoS:has(~#collegeofScience:hover){
+        display: block;
+        background-color: white;
+    }
+
+    #collegeofScience:hover {
+        display: block;
+        background-color: white;
+    } */
+
+
+/* 
+    #menu_CoI:hover~#collegeofInterdisciplinaryStudies {
+        display: block;
+        background-color: white;
+    }
+
+    #menu_CoI:has(~#collegeofInterdisciplinaryStudies:hover){
+        display: block;
+        background-color: white;
+    }
+
+    #collegeofInterdisciplinaryStudies:hover {
+        display: block;
+        background-color: white;
+    } */
+
+    #result {
+        float: left;
+        margin-bottom: 20px;
+        width: 100vw;
+    }
+
+    #result table {
+        position: relative;
+        width: 80%;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    #result table, th, td {
+        padding: 10px;
+    }
+
+    #result td {
+        text-align: left;
+    }
+}

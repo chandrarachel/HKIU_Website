@@ -1,0 +1,68 @@
+/* style for navigation bar */
+/* animation nav shaking */
+
+#navBar {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202525;
+    font-size: 18px;
+    position: sticky;
+    top: 0vh;
+    z-index: 999;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5vw;
+    color: whitesmoke;
+}
+
+nav a ul:last-child {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.02cm;
+    margin: 0.8% auto;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: grey;
+}
+
+@keyframes textShake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+nav a:hover {
+    color: #FF7F7F;
+}
+
+nav li:hover {
+    animation: textShake 0.25s infinite;
+}
+
+nav a:active {
+    color: rgb(111, 111, 201);
+    text-shadow: 0 0 8px rgb(146, 78, 210);
+}
